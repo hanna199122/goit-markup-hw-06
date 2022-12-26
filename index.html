@@ -400,7 +400,7 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
-                <svg class="modal-icon-close" width="18px" height="18px"><use href="./images/icons.svg#icon-close-black" class="icon-close-link"></use> </svg>
+                <svg class="modal-icon-close" width="18px" height="18px"><use href="./images/icons.svg#icon-close-black" class="icon-close-link"></use></svg>
             </button>
             <form class="modal-wrap">
                 <p class="modal-headind">Залиште свої дані, ми вам передзвонимо</p>
@@ -408,34 +408,37 @@
                 <div class="modal-input-group">
                     <label for="name" class="">Ім'я</label>
                     <input type="text" class="modal-input" name="name" id="name" required>
-                    <svg class="modal-input-icon">
-                    <use href="./images/icons.svg#icon-modal-person" width="18" height="18" class="icon-input-link link">
+                    <svg class="modal-input-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-modal-person" class="icon-input-link link">
                     </use></svg>
                 </div>
 
                 <div class="modal-input-group">
-                    <label for="phone" class="">Телефон</label>
+                    <label for="phone" class="label">Телефон</label>
                     <input type="tel" class="modal-input" name="phone" id="phone" required 
-                    pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="13" maxlength="13">
-                    <svg class="modal-input-icon">
-                        <use href="./images/icons.svg#icon-modal-phone" width="18" height="18" class="icon-input-link link">
+                    minlength="13" maxlength="13">
+                    <svg class="modal-input-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-modal-phone" class="icon-input-link link">
                         </use></svg>
                 </div>
 
                 <div class="modal-input-group">
-                    <label for="email" class="">Email</label>
+                    <label for="email" class="label">Email</label>
                     <input type="email" class="modal-input" name="name" id="email" required>
-                    <svg class="modal-input-icon">
-                        <use href="./images/icons.svg#icon-modal-email" width="18" height="18" class="icon-input-link link">
+                    <svg class="modal-input-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-modal-email"  class="icon-input-link link">
                         </use></svg>
                 </div>
 
                 <div class="modal-input-group">
-                    <label for="comment" class="">Коментар</label>
+                    <label for="comment" class="label">Коментар</label>
                     <textarea class="modal-text" id="comment" name="comment" placeholder="Введіть текст"></textarea>     
                 </div>
 
-                <p class="modal-agreement">Я погоджуюсь з розсилкою і <span><a href="" class="modal-agreement-link link">приймаю умови договру</a></span></p>
+                <div class="modal-agreement">
+                    <label for="checkbox" class="label">Я погоджуюсь з розсилкою і приймаю<span><a href="" class="modal-agreement-link link">Умови договору</a></span> </label>
+                    <input class="modal-checkbox" type="checkbox" name="checkbox" id="checkbox"><span class="icon-checkbox"></span> 
+                </div>
 
                 <button class="modal-button-submit button btn-main-site" type="submit">Відправити</button>
             </form>
