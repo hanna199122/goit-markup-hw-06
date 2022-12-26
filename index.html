@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -400,7 +400,7 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
-                <svg class="button-close" width="18px" height="18px"><use href="./images/icons.svg#icon-close-black"></use> </svg>
+                <svg class="modal-icon-close" width="18px" height="18px"><use href="./images/icons.svg#icon-close-black" class="icon-close-link"></use> </svg>
             </button>
             <form class="modal-wrap">
                 <p class="modal-headind">Залиште свої дані, ми вам передзвонимо</p>
@@ -432,10 +432,10 @@
 
                 <div class="modal-input-group">
                     <label for="comment" class="">Коментар</label>
-                    <textarea class="modal-text" id="comment" name="comment" required placeholder="Введіть текст">       
+                    <textarea class="modal-text" id="comment" name="comment" placeholder="Введіть текст"></textarea>     
                 </div>
-                
-                <p class="modal-agreement">Я погоджуюсь з розсилкою і <span class="modal-agreement-link link"><a href="">приймаю умови договру</a></p></span>
+
+                <p class="modal-agreement">Я погоджуюсь з розсилкою і <span><a href="" class="modal-agreement-link link">приймаю умови договру</a></span></p>
 
                 <button class="modal-button-submit button btn-main-site" type="submit">Відправити</button>
             </form>
